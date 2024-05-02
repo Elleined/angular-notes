@@ -1,6 +1,10 @@
 # angular-notes
 Notes for Angular
 
+# Pre-requisites
+- JS Fundamentals
+- Typescript
+
 # What is Angular
 - UI framework created by google
 - A component based framework
@@ -17,3 +21,23 @@ Notes for Angular
 - Performs specific operation
 - You can combine libraries to build your own app.
 
+# Typescript
+- Strongly typed languange
+- Created and maintained by Microsoft
+- Superset of JavaScript
+
+
+# How start an angular project
+- Install the LTS version of node.
+- To create package json
+```
+npm init
+```
+- Install LTS version of typescript
+```
+npm i typescript
+```
+- Initialize typescript
+```
+tsc --init
+```
