@@ -6,9 +6,20 @@ Notes for Angular
 - Typescript
 
 # What is Angular
+- Cross platform, Flexible development, production ready fast and performant.
 - UI framework created by google
-- A component based framework
-- Has provided libraries for features like routings, data binding, template, forms, pwa (Multi-platform support), and Observables.
+- A component based framework for building scalable web applications.
+- Collection of well integrated libraries that cover wide variety of features.
+- Helps you build, develop, test, and update your code.
+- Uses MVVC architecture.
+- Heirarchial dependence implementated using an infusion system declaration, constructors function, and providers.
+- () used for event binding
+- [] used for property bindin
+
+## Architecture
+- Angular has own modularity called Angular Module also know as NgModules.
+- Components are divided into small parts for easy access of data.
+- Divided components are easier to maintain.
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
@@ -20,22 +31,6 @@ Notes for Angular
 ## Library
 - Performs specific operation
 - You can combine libraries to build your own app.
-
-# Typescript
-- Strongly typed languange
-- Created and maintained by Microsoft
-- Superset of JavaScript
-
-## Datatypes
-- string
-- number
-- boolean
-- array
-- enum
-- tuple
-- any
-- void
-- never
 
 # How start an angular project
 - Install the LTS version of node.
