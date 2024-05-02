@@ -45,7 +45,7 @@ npm init
 ```
 - Install LTS version of typescript
 ```
-npm i typescript
+npm install typescript --save-dev
 ```
 - Initialize typescript
 ```
