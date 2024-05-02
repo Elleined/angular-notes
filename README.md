@@ -51,6 +51,10 @@ ng new <project-name>
 ```
 cd <project-name>
 ```
+- Add Angular material
+```
+ng add @angular/material
+```
 - Run the project
 ```
 ng serve
