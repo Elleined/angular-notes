@@ -26,6 +26,16 @@ Notes for Angular
 - Created and maintained by Microsoft
 - Superset of JavaScript
 
+## Datatypes
+- string
+- number
+- boolean
+- array
+- enum
+- tuple
+- any
+- void
+- never
 
 # How start an angular project
 - Install the LTS version of node.
