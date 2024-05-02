@@ -39,15 +39,19 @@ Notes for Angular
 
 # How start an angular project
 - Install the LTS version of node.
-- To create package json
+- Install angular cli
 ```
-npm init
+npm install -g @angular/cli
 ```
-- Install LTS version of typescript
+- Create new project
 ```
-npm install typescript --save-dev
+ng new <project-name>
 ```
-- Initialize typescript
+- Go to created project folder
 ```
-tsc --init
+cd <project-name>
+```
+- Run the project
+```
+ng serve
 ```
