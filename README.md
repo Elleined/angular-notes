@@ -105,3 +105,18 @@ ng add @angular/material
 ```
 ng serve
 ```
+
+# Typescript
+- Strongly typed languange
+- Created and maintained by Microsoft
+- Superset of JavaScript
+## Datatypes
+1. string
+2. number
+3. boolean
+4. array
+5. enum
+6. tuple
+7. any
+8. void
+9. never
