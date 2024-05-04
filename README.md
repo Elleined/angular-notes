@@ -14,7 +14,8 @@ Notes for Angular
 - Uses MVVC architecture.
 - Heirarchial dependence implementated using an infusion system declaration, constructors function, and providers.
 - () used for event binding
-- [] used for property bindin
+- [] used for property binding
+- {} used for variable binding
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
