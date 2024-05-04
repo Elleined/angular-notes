@@ -50,6 +50,9 @@ Notes for Angular
 <component-name>.component.css (Metadata)
 - Contains the css styles
 
+<component-name>.routes.ts
+- Contains the component routes/ navigation to other components
+
 ## Benefits of Components
 - Separates html, css, and javascript files but works together
 - Seamless in browser navigation
