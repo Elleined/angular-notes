@@ -13,9 +13,11 @@ Notes for Angular
 - Helps you build, develop, test, and update your code.
 - Uses MVVC architecture.
 - Heirarchial dependence implementated using an infusion system declaration, constructors function, and providers.
+
+## Angular Binding
 - () used for event binding
 - [] used for property binding
-- {} used for variable binding
+- {{}} used for variable binding from ts/ js to html file
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
