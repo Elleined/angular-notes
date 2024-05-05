@@ -28,7 +28,7 @@ Notes for Angular
 ```
 ## Property Binding []
 - Angular will read it directly from ts file preserving its data type
-- Mainly used for changing the html element property.
+- Mainly used for changing the html element property value.
 ```
 <img [src] = "variableName" />
 ```
