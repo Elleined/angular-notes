@@ -17,7 +17,28 @@ Notes for Angular
 ## Angular Binding
 - () used for event binding
 - [] used for property binding
-- {{}} used for variable binding from ts/ js to html file
+- {{}} used for interpolation from ts/ js to html file
+
+# Data Binding
+## Interpolation {{}}
+- After you pass the data from ts to html angular will read the variable and display it as a string
+- Once you bind it in html it will remain constant even you change it in ts file it will not reflect in html file (read-only)
+```
+<img src = {{variableName}} />
+```
+## Property Binding []
+- Angular will read it directly from ts file preserving its data type
+- After you bind it in html whenever you change it in ts file it also change in html file (read-write) dynamically
+```
+<img [src] = "variableName" />
+```
+
+## Event Binding ()
+- Used to listen from anything you do in website
+```
+<button (event) = "functionNameFromTsFile()"> </button>
+```
+## 2 Way Data Binding [{}]
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
