@@ -22,13 +22,13 @@ Notes for Angular
 # Data Binding
 ## Interpolation {{}}
 - After you pass the data from ts to html angular will read the variable and display it as a string
-- Once you bind it in html it will remain constant even you change it in ts file it will not reflect in html file (read-only)
+- Mainly use for directly displaying value directly in html element text.
 ```
-<img src = {{variableName}} />
+<p>Hello There, {{currentUser}}</p>
 ```
 ## Property Binding []
 - Angular will read it directly from ts file preserving its data type
-- After you bind it in html whenever you change it in ts file it also change in html file (read-write) dynamically
+- Mainly used for changing the html element property.
 ```
 <img [src] = "variableName" />
 ```
