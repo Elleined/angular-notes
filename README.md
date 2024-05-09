@@ -17,6 +17,7 @@ Notes for Angular
 ## Angular Binding
 - () used for event binding
 - [] used for property binding
+- [()] used for two way data binding
 - {{}} used for interpolation from ts/ js to html file
 
 # Data Binding
@@ -39,6 +40,12 @@ Notes for Angular
 <button (event) = "functionNameFromTsFile()"> </button>
 ```
 ## 2 Way Data Binding [{}]
+- Used to have a websocket like featured where html(view) and ts(model) file always are synchronize.
+- Combination of all interpolation, property binding, and event binding.
+```
+<input type="text" [(ngModel)]="name">
+<p>Hello, {{name}}!</p>
+```
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
