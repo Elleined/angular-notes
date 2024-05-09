@@ -50,10 +50,14 @@ Notes for Angular
 # Angular Directives
 
 ## Structural Directives
-Structural directives alter the layout of the DOM by adding or removing elements.
+Structural directives alter the layout of the DOM by adding, changing, or removing elements.
 Examples include:
 - `*ngFor`: Iterates over a collection and instantiates a template once for each item.
 - `*ngIf`: Conditionally includes or excludes a section of HTML based on an expression.
+- `*ngSwitch`:
+- `<ng-emplate> </ng-template>`:
+
+###### Note: An html element can only have one and only one directive.
 
 ## Attribute Directives
 Attribute directives change the appearance or behavior of an element, component, or another directive.
@@ -127,7 +131,13 @@ ng g c <component-name>
 
 ### Difference of View and Template
 - Basically View is your main UI for your component
-- Template is the HTML Reusable Snippets that you use multiples times in a multiple view.
+- Template is the HTML Reusable Snippets that you use multiples times in a multiple views.
+
+# Important imports
+- BrowserModule
+- AppRoutingModule
+- NgModule
+- FormsModule
 
 # How start an angular project
 - Install the LTS version of node.
