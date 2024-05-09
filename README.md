@@ -47,6 +47,24 @@ Notes for Angular
 <p>Hello, {{name}}!</p>
 ```
 
+# Angular Directives
+
+## Structural Directives
+Structural directives alter the layout of the DOM by adding or removing elements.
+Examples include:
+- `*ngFor`: Iterates over a collection and instantiates a template once for each item.
+- `*ngIf`: Conditionally includes or excludes a section of HTML based on an expression.
+
+## Attribute Directives
+Attribute directives change the appearance or behavior of an element, component, or another directive.
+Examples include:
+- `ngClass`: Adds or removes CSS classes dynamically based on certain conditions.
+- `ngStyle`: Sets inline styles dynamically based on expressions.
+
+## Component Directives
+Component directives are used to create reusable components with their own view and behavior.
+They encapsulate a part of the UI and its logic.
+
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
 
