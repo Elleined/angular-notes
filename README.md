@@ -63,7 +63,7 @@ Examples include:
 
 ## Component Directives
 Component directives are used to create reusable components with their own view and behavior.
-They encapsulate a part of the UI and its logic.
+They encapsulate a part of the UI and its logic. @Component
 
 ## AngularJS is the version 1
 ## Angular now is the version 2 and the latest version 
