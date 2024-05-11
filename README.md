@@ -121,13 +121,36 @@ Examples include:
 - Component directives are used to create reusable components with their own view and behavior.
 They encapsulate a part of the UI and its logic. @Component
 
+# Angular Dependency Injection
+- Just like spring boot dependecy injection.
 
 # Angular Services
 - Can be anythind such as values, functions, or feature that are required by angular application
 ## When to use services
 - For businesss logic.
+- Validations
 - Distributing data between different components.
 - To communicate with external services.
+- Basically all the stuff for your application to meet business requirements.
+
+## Services availability and registration
+- Service registration Of course you need to imoprt it first in ts file for you to use the service.
+- Services visibility depoends on where you import it Maybe Globally in app.component.ts or exclusively one of your components.
+## How to create a service 
+```
+ng g s <service-name>
+```
+
+# Angular Routing and Navigation
+- Routing is just directing users to appropriate web page.
+- Navigation is just users can do backward and forward history of web page.
+
+## Routing and Navigation Life Cycle
+1. URL Redirects applied.
+2. Match URL to Router State.
+3. Process guards and resolvers.
+4. Activate view using router-outlet.
+5. Navigate, update browser location.
 
 # Important imports
 - BrowserModule
