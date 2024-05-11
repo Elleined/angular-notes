@@ -14,7 +14,59 @@ Notes for Angular
 - Uses MVVC architecture.
 - Heirarchial dependence implementated using an infusion system declaration, constructors function, and providers.
 
-## Angular Binding
+## AngularJS is the version 1
+## Angular now is the version 2 and the latest version 
+
+# Angular Component
+- With annotation of @Component
+- Set of HTML, CSS, and JavaScript separating each concern.
+- Can have only one module.
+- Is consist of Views, Template, Derivatives, and Components
+
+## Angular Component Structure
+<component-name>.component.html (Views)
+- Contains the HTML elements
+
+<component-name>.component.spec.ts or js (Services)
+- Contains the unit test of your component
+
+<component-name>.component.ts or js
+- Contains the js or ts code for your component logic
+
+<component-name>.component.css (Metadata)
+- Contains the css styles
+
+<component-name>.routes.ts
+- Contains the component routes/ navigation to other components
+
+## Benefits of Components
+- Separates html, css, and javascript files but works together
+- Seamless in browser navigation
+- Web component based is balanced
+
+## How to use Component
+- the `selector` attribute of your component defines how to use it. It can be used as custom HTML element by default and class attribute value instead just add . in selector.
+
+## Create a component
+```
+ng g c <component-name>
+```
+
+# Template
+- Is a HTML Snippet(1 - 3 lines of code) that tells angular how render the Component in Angular application.
+- Is immediately associated with component and defines the component's template.
+- Can only have 1 component
+
+# Views
+- Is a HTML Block (4-infinity lines of code) that tells angular how to render Component.
+- Is immediately associated with component and defines the component's view.
+- Can be used in multiple Component
+
+## Difference of View and Template
+- Basically View is your main UI for your component
+- Template is the HTML Reusable Snippets that you use multiples times in a multiple views.
+
+# Angular Binding
 - () used for event binding
 - [] used for property binding
 - [()] used for two way data binding
@@ -48,7 +100,6 @@ Notes for Angular
 ```
 
 # Angular Directives
-
 ## Structural Directives
 Structural directives alter the layout of the DOM by adding, changing, or removing elements.
 Examples include:
@@ -64,74 +115,19 @@ Attribute directives change the appearance or behavior of an element, component,
 Examples include:
 - `ngClass`: Adds or removes CSS classes dynamically based on certain conditions.
 - `ngStyle`: Sets inline styles dynamically based on expressions.
+- `ngModel`: Used for two wat data binding.
 
 ## Component Directives
-Component directives are used to create reusable components with their own view and behavior.
+- Component directives are used to create reusable components with their own view and behavior.
 They encapsulate a part of the UI and its logic. @Component
 
-## AngularJS is the version 1
-## Angular now is the version 2 and the latest version 
 
-# Difference between Frameworks and Libraries
-## Framework
-- Contains set of libraries and also extensible.
-  
-## Library
-- Performs specific operation
-- You can combine libraries to build your own app.
-
-# Module
-- With annotation of @NgModule
-- Can have many components, pipes, derivatives and service.
-
-# Component
-- With annotation of @Component
-- Set of HTML, CSS, and JavaScript separating each concern.
-- Can have only one module.
-- Is consist of Views, Template, Derivatives, and Components
-
-## Structure
-<component-name>.component.html (Views)
-- Contains the HTML elements
-
-<component-name>.component.spec.ts or js (Services)
-- Contains the unit test of your component
-
-<component-name>.component.ts or js
-- Contains the js or ts code for your component logic
-
-<component-name>.component.css (Metadata)
-- Contains the css styles
-
-<component-name>.routes.ts
-- Contains the component routes/ navigation to other components
-
-## Benefits of Components
-- Separates html, css, and javascript files but works together
-- Seamless in browser navigation
-- Web component based is balanced
-
-## How to use Component
-- the `selector` attribute of your component defines how to use it. It can be used as custom HTML element by default and class attribute value instead just add . in selector.
-
-## Create a component
-```
-ng g c <component-name>
-```
-
-## Template
-- Is a HTML Snippet(1 - 3 lines of code) that tells angular how render the Component in Angular application.
-- Is immediately associated with component and defines the component's template.
-- Can only have 1 component
-
-## Views
-- Is a HTML Block (4-infinity lines of code) that tells angular how to render Component.
-- Is immediately associated with component and defines the component's view.
-- Can be used in multiple Component
-
-### Difference of View and Template
-- Basically View is your main UI for your component
-- Template is the HTML Reusable Snippets that you use multiples times in a multiple views.
+# Angular Services
+- Can be anythind such as values, functions, or feature that are required by angular application
+## When to use services
+- For businesss logic.
+- Distributing data between different components.
+- To communicate with external services.
 
 # Important imports
 - BrowserModule
