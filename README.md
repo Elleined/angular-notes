@@ -152,6 +152,17 @@ ng g s <service-name>
 4. Activate view using router-outlet.
 5. Navigate, update browser location.
 
+## Single App Routing Techniques
+- using routerLink="<component-name>"
+
+## Router Events
+- NavigationStart
+- RouterConfigLoadEnd
+- NavigationEnd
+- RouterConfigLoadStart
+- NavigationError
+- NavigationCancel
+
 # Important imports
 - BrowserModule
 - AppRoutingModule
