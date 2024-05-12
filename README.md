@@ -144,6 +144,7 @@ ng g s <service-name>
 # Angular Routing and Navigation
 - Routing is just directing users to appropriate web page.
 - Navigation is just users can do backward and forward history of web page.
+- using routerLink=`"<component-name>"`
 
 ## Routing and Navigation Life Cycle
 1. URL Redirects applied.
@@ -152,8 +153,37 @@ ng g s <service-name>
 4. Activate view using router-outlet.
 5. Navigate, update browser location.
 
-## Single App Routing Techniques
-- using routerLink="<component-name>"
+## How to use Angular Routing
+[Angular Routing Sample](https://medium.com/@biplavmazumdar5/angular-17-routing-cc4a20cc4d8c)
+1. Create the components
+2. Go to app.routes.ts
+```
+export const routes: Routes = [
+    {
+        path: "myComponentPath", // This is what you will specify in routerLink
+        title: "", // Optional add information about your routing
+        component: MycomponentComponent // The component where you want to go
+    },
+    {
+        path: "myOtherComponentPath", // This is what you will specify in routerLink
+        title: "", // Optional add information about your routing
+        component: MyothercomponentComponent // The component where you want to go
+    }
+];
+```
+3. Go to app.component.ts and add these imports to @Component
+```
+imports: [RouterOutlet, RouterModule, RouterLink, RouterLinkActive],
+```
+4. Go to html file and add routerLink
+```
+<button routerLink="/myComponentPath">Go to other component</button>
+<button routerLink="/myOtherComponentPath">Go to my other component</button>
+```
+5. DONT FORGET TO ADD THE <router-outlet></router-outlet> at the end of html file or else it will not work!!.
+```
+<router-outlet></router-outlet>
+```
 
 ## Router Events
 - NavigationStart
