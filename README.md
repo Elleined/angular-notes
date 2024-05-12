@@ -27,16 +27,16 @@ Notes for Angular
 <component-name>.component.html (Views)
 - Contains the HTML elements
 
-<component-name>.component.spec.ts or js (Services)
+<component-name>.component.spec.ts or js (Test Service)
 - Contains the unit test of your component
 
-<component-name>.component.ts or js
+<component-name>.component.ts or js (Service)
 - Contains the js or ts code for your component logic
 
 <component-name>.component.css (Metadata)
 - Contains the css styles
 
-<component-name>.routes.ts
+<component-name>.routes.ts (Routing)
 - Contains the component routes/ navigation to other components
 
 ## Benefits of Components
@@ -125,7 +125,8 @@ They encapsulate a part of the UI and its logic. @Component
 - Just like spring boot dependecy injection.
 
 # Angular Services
-- Can be anythind such as values, functions, or feature that are required by angular application
+- Can be anythind such as values, functions, or feature that are required by angular application.
+- It is globally available by default.
 ## When to use services
 - For businesss logic.
 - Validations
@@ -133,9 +134,6 @@ They encapsulate a part of the UI and its logic. @Component
 - To communicate with external services.
 - Basically all the stuff for your application to meet business requirements.
 
-## Services availability and registration
-- Service registration Of course you need to imoprt it first in ts file for you to use the service.
-- Services visibility depoends on where you import it Maybe Globally in app.component.ts or exclusively one of your components.
 ## How to create a service 
 ```
 ng g s <service-name>
