@@ -92,6 +92,7 @@ ng g c <component-name>
 <button (event) = "functionNameFromTsFile()"> </button>
 ```
 ## 2 Way Data Binding [{}]
+- import FormsModule
 - Used to have a websocket like featured where html(view) and ts(model) file always are synchronize.
 - Combination of all interpolation, property binding, and event binding.
 ```
