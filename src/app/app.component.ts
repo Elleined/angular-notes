@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { MyserviceService } from './services/myservice.service';
 import { routes } from './app.routes';
+import { MycomponentComponent } from './mycomponent/mycomponent.component';
+import { MyothercomponentComponent } from './myothercomponent/myothercomponent.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgFor, RouterModule],
+  imports: [RouterOutlet, NgFor, RouterModule, RouterLink, RouterLinkActive, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   myVariable: any = "My Variable";
   myProperty: any = "color: purple";
+  @Input() myTwoWayVariable: string = "";
 
   constructor(private myService: MyserviceService) {
 

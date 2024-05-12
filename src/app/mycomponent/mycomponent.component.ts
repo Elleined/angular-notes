@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class MycomponentComponent {
 
+  constructor(private _location: Location) {
+
+  }
+
+  goBack() {
+    this._location.back();
+  }
 }
