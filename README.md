@@ -225,6 +225,10 @@ ng serve
 - Strongly typed languange
 - Created and maintained by Microsoft
 - Superset of JavaScript
+
+## Typescript naming conventions
+https://ts.dev/style/
+
 ## Datatypes
 1. string
 2. number
