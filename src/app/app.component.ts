@@ -1,11 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
-import { MyserviceService } from './services/myservice.service';
-import { routes } from './app.routes';
-import { MycomponentComponent } from './mycomponent/mycomponent.component';
-import { MyothercomponentComponent } from './myothercomponent/myothercomponent.component';
 import { FormsModule } from '@angular/forms';
+import { FirstServiceService } from './services/first-service.service';
 
 @Component({
   selector: 'app-root',
@@ -15,35 +12,21 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  myVariable: any = "My Variable";
-  myProperty: any = "color: purple";
-  @Input() myTwoWayVariable: string = "";
-
-  constructor(private myService: MyserviceService) {
-
+  constructor(private router: Router, private myFirstService: FirstServiceService) {
   }
-
   ngOnInit(): void {
-    this.myService.iShouldWork();
+    this.myFirstService.shouldWork();
   }
 
-  myVariables: Array<number> = [1, 2, 3];
-
-  myObject: Person = {
-    name: "Person Name",
-    age: 100
+  goToBindings() {
+    this.router.navigate(['/bindings']);
   }
 
-  changeMyVariable(): void {
-    this.myVariable = "Changed My Variable";
+  goToForms() {
+    this.router.navigate(['/forms']);
   }
 
-  changeMyProperty(color: string): void {
-    this.myProperty = color;
+  goToRoutings() {
+    this.router.navigate(['/routings']);
   }
-}
-
-interface Person {
-  name: string;
-  age: number;
 }

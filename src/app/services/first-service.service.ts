@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MyserviceService {
+export class FirstServiceService {
 
   constructor() { }
 
-  iShouldWork(): void {
-    console.log("My service works.");
+  shouldWork() {
+    console.log("My Service Works");
   }
 }

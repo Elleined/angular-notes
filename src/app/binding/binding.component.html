@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binding</title>
+</head>
+<body>
+    <h1>Accessing variables from ts file into html file</h1>
+    <h4>How to access variable from ts file to this html file</h4>
+    <ol>
+        <li>Declare a global variable in ts file</li>
+        <li>Access it via using {{"{{variableName}}"}} and see this code</li>
+    </ol>   
+    <p>{{myVariable}}</p>
+
+    <hr>
+    <h4><b>How to access array from ts file to this html file </b></h4>
+    <ol>
+        <li>Import NgFor in ts file and add it to IterateComponent imports</li>
+        <li>Create a global array variable in ts file and see this code.</li>
+    </ol>
+    <ul>
+        <li *ngFor = "let myVariable of myVariables">{{myVariable}}</li>
+    </ul>
+
+    <hr>
+    <h4>How to access object in ts file into this html file</h4>
+    <ol>
+        <li>Create a interface with your object property
+            <code>
+                interface Person
+                    name: string;
+                    age: number;                 
+            </code>
+        </li>
+        <li>Declare a global object variable in ts file using the interface you created as object type 
+            <code>
+                myObject: Person = name: "Person Name", age: 100
+            </code>
+        </li>
+    </ol>
+    <p>Name: {{myObject.name}}</p>
+    <p>Age: {{myObject.age}}</p>
+
+    <hr>
+    <h1>Angular Bindings</h1>
+    <h4>Interpolation Binding</h4>
+    <p>{{myVariable}}</p>
+    <button (click)="changeMyVariable()">Change My Variable</button>
+    <p>Mainly use for directly displaying value directly in html element text.</p>
+
+    <hr>
+    <h4>Property Binding</h4>
+    <p [style]="myProperty">Property Binding</p>
+    <button (click)="changeMyProperty('black')">Change p element property color to specified color</button>
+    <p>Mainly used for changing the html element property value.</p>
+
+    <hr>
+    <h4>Two way data binding</h4>
+    <input type="text" [(ngModel)]="myTwoWayVariable">
+    <p>{{myTwoWayVariable}}</p>
+    <hr>
+</body>
+</html>
