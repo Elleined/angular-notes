@@ -1,1 +1,30 @@
-<p>forms works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Nested Form Group</h2>
+    <form [formGroup]="registerForm" (ngSubmit) = "nestedFormOnSubmit()">
+        <h5>Personal Information</h5>
+        <div formGroupName="informationGroup">
+            <label for="name">Name:</label>
+            <input type="text" name="name" formControlName="nameControl">
+            <label for="age">Age:</label>
+            <input type="text" name="age" formControlName="ageControl">
+        </div>
+        <h5>Address Information</h5>
+        <div formGroupName="addressGroup">
+            <label for="province">Province</label>
+            <input type="text" name="province" formControlName="provinceControl">
+            <label for="city">City</label>
+            <input type="text" name="city" formControlName="cityControl">
+            <label for="baranggay">Baranggay</label>
+            <input type="text" name="baranggay" formControlName="baranggayControl">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
