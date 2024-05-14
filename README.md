@@ -117,6 +117,9 @@ Examples include:
 - `ngClass`: Adds or removes CSS classes dynamically based on certain conditions.
 - `ngStyle`: Sets inline styles dynamically based on expressions.
 - `ngModel`: Used for two wat data binding.
+- `formControl`: Used to link input html element and ts variable.
+- `formGroup`: Used to group form controls.
+   - `formControlName=<form-control-name-from-ts-file>`: Same concept of form control but with different syntax.
 
 ## Component Directives
 - Component directives are used to create reusable components with their own view and behavior.
@@ -191,6 +194,27 @@ imports: [RouterOutlet, RouterModule, RouterLink, RouterLinkActive],
 - RouterConfigLoadStart
 - NavigationError
 - NavigationCancel
+
+# Angular Forms
+- Allow to manage data by sending inputs to the serv- er for processing
+
+
+## Building Blocks
+### Form Control
+- Used to handle user input also validate and update.
+### Form Group 
+- Used to group form controls
+### Control Value Accessor
+- Used to create a link between form control instance and html element
+
+## 2 Types of Forms
+### Reactive Forms
+#### Control Value Management
+- Angular gives access to form control state and the value and can be change in template and component class.
+- To gain access you have 2 choices either use Observable or in component class using the ``subscribe()`` method
+### Templated Forms
+![Screenshot from 2024-05-14 21-03-32](https://github.com/Elleined/angular-notes/assets/111877930/40c762c0-cdc8-4fae-b879-384445a0c76a)
+
 
 # Important imports
 - BrowserModule
