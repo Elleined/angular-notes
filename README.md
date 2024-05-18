@@ -263,3 +263,30 @@ https://ts.dev/style/
 7. any
 8. void
 9. never
+
+
+# [Tailwind Installation](https://tailwindcss.com/docs/installation)
+
+# Flaticon Installation
+1. Install [Flaticon Ui Icons](https://www.flaticon.com/uicons/interface-icons)
+2. Install vs code extenstion
+   - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+1. Install Flaticon
+```
+npm i @flaticon/flaticon-uicons
+```
+2. Always include these link in your every html file header
+- Where the path is relative to your html file to the flaticon in node modules
+```
+<head>
+  <link rel="stylesheet" type="text/css" href="../node_modules/&#64;flaticon/flaticon-uicons/css/all/all.css">
+</head>
+```
+
+# Axios Installation
+- [Axios Documentation](https://www.npmjs.com/package/axios)
+1. Install axios
+```
+https://www.npmjs.com/package/axios
+```
