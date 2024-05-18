@@ -266,11 +266,11 @@ https://ts.dev/style/
 
 
 # [Tailwind Installation](https://tailwindcss.com/docs/installation)
-
-# Flaticon Installation
-1. Install [Flaticon Ui Icons](https://www.flaticon.com/uicons/interface-icons)
-2. Install vs code extenstion
+1. Install vs code extenstion
    - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+   
+# Flaticon Installation
+[Flaticon Ui Icons](https://www.flaticon.com/uicons/interface-icons)
 
 1. Install Flaticon
 ```
