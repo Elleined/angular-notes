@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../node_modules/@flaticon/flaticon-uicons/css/all/all.css">
 </head>
 <body>
-    <h1>App Component</h1>
-
-    <button (click)="goToBindings()">Go To Bindings</button>
-    <button (click)="goToForms()">Go to Forms</button>
-    <button (click)="goToRoutings()">Go to Routing</button>
+    <h1>Using Tailwind and Flaticons Sample</h1>
+    <h2>Flaticons Tutorial</h2>
+    <ol>
+        <li>
+            1. Install the flaticon
+            <code>npm i &#64;flaticon/flaticon-uicons</code>
+        </li>
+        <li>
+            2. Use this link tag to every html file you create to use the icons
+            The path relative to  your file
+            <code>
+                link rel="stylesheet" type="text/css" href="../../node_modules/&#64;flaticon/flaticon-uicons/css/all/all.css"
+            </code>
+        </li>
+        <li>
+            3. See this website to get the icons
+            <a href="https://www.flaticon.com/uicons/interface-icons" class="bg-red-300">Flaticon UI Icons</a>
+        </li>
+        <li></li>
+    </ol>
     
-    <p class="m-9 p-4">asdasdsa</p>
+    <button (click)="goToBindings()" class="m-4">
+        <i class="fi fi-br-arrow-right"></i>
+        Go To Bindings
+    </button>
+
+    <button (click)="goToForms()" class="m-4">
+    <i class="fi fi-rr-menu-burger"></i>
+        Go to Forms
+    </button>
+
+    <button (click)="goToRoutings()" class="m-4">
+        <i class="fi fi-sr-envelope"></i>
+        Go to Routing
+    </button>
+    
+    
     <router-outlet></router-outlet>
 </body> 
 </html>

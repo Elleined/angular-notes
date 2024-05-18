@@ -4,6 +4,7 @@ import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FirstServiceService } from './services/first-service.service';
 import { NgIcon, NgIconsModule } from '@ng-icons/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   }
   ngOnInit(): void {
     this.myFirstService.shouldWork();
+  
   }
 
   goToBindings() {
@@ -31,5 +33,11 @@ export class AppComponent implements OnInit {
 
   goToRoutings() {
     this.router.navigate(['/routings']);
+  }
+
+  tryAxios() {
+    axios.get("/api/users", {
+      params: 1
+    });
   }
 }
