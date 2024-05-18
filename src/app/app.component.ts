@@ -3,11 +3,14 @@ import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FirstServiceService } from './services/first-service.service';
+import { NgIcon, NgIconsModule } from '@ng-icons/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgFor, RouterModule, RouterLink, RouterLinkActive, FormsModule],
+  imports: [RouterOutlet, NgFor, RouterModule, RouterLink, RouterLinkActive, FormsModule, 
+  
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
